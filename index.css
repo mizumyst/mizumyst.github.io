@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+Symbols&family=Noto+Sans+Symbols+2&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --base-font-size: 1.125rem;
+    --background-color-dark: #111;
+    --header-color-dark: #222;
+    --text-color-dark: #efefef;
+    --accent-color-dark: #F1C232;
+    
+    --lime-color: #84D909;
+}
+
+html {
+    font-size: var(--base-font-size);
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+body {
+    font-family: "Noto Sans", "Noto Sans JP", "Noto Sans Symbols", "Noto Sans Symbols 2", sans-serif;
+    margin: 0;
+    padding: 1rem 5vw;
+}
+
+h1, h2 {
+    /*font-weight: normal;*/
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+p {
+    font-size: 1rem;
+}
+
+ul {
+    padding-inline-start: 2rem;
+}
+
+li {
+    list-style-type: "🞙  ";
+}
+
+li li {
+    list-style-type: "🞙  ";
+}
+
+a {
+    color: var(--accent-color-dark);
+}
+
+a[target|="_blank"]::after {
+    content: " 🗗";
+    font-size: 0.8em;
+    line-height: 1em;
+}
+
+a[href*="youtube.com"]::after,
+a[href*="youtu.be"]::after {
+    color: #FF0000;
+    content: " 🗗YT";
+    font-size: 0.8em;
+    line-height: 1em;
+}
+
+/* text markup */
+
+.lime {
+    color: var(--lime-color);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* svg filters */
+
+.icon-light {
+    filter: brightness(0) saturate(100%) invert(97%) sepia(5%) saturate(262%) hue-rotate(228deg) brightness(118%) contrast(87%);
+}
+
+/* layout */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    font-size:2rem;
+    font-weight: bold;
+    background-color: var(--header-color-dark);
+
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    padding-left: 5vw;
+} 
+
+.content {
+    padding-top: 4rem;
+}
