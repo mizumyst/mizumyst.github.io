@@ -26,6 +26,12 @@ h1, h2 {
     /*font-weight: normal;*/
 }
 
+.page-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
 h1 {
     font-size: 2rem;
     margin: 1rem 0 0.5rem 0;
@@ -57,7 +63,7 @@ a {
 }
 
 a[target|="_blank"]::after {
-    content: " 🗗";
+    content: " 🗗🡥";
     font-size: 0.8em;
     line-height: 1em;
 }
@@ -74,6 +80,7 @@ a[href*="youtu.be"]::after {
 
 .lime {
     color: var(--lime-color);
+    font-weight: bold;
 }
 
 .bold {
@@ -94,11 +101,11 @@ a[href*="youtu.be"]::after {
     left: 0;
     width: 100%;
 
-    font-size:2rem;
-    font-weight: bold;
     background-color: var(--header-color-dark);
 
     display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
     align-items: center;
     height: 4rem;
     padding-left: 5vw;
