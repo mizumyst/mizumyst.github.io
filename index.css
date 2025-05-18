@@ -56,12 +56,12 @@ body {
 } 
 
 .page-title a {
-    color: white;
+    color: var(--text-color-dark);
     text-decoration: none;
 }
 
 .page-title a:hover{
-    color: white;
+    color: var(--text-color-dark);
     text-decoration: underline;
 }
 
