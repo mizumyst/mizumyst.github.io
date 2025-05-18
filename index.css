@@ -58,6 +58,7 @@ h2 {
 }
 
 p {
+    margin: 0.8rem 0;
     font-size: 1rem;
 }
 
@@ -72,6 +73,8 @@ li {
 li li {
     list-style-type: "🞙  ";
 }
+
+/* link styles */
 
 a {
     color: var(--accent-color-dark);
@@ -108,7 +111,7 @@ a[href*="youtu.be"]::after {
     filter: brightness(0) saturate(100%) invert(97%) sepia(5%) saturate(262%) hue-rotate(228deg) brightness(118%) contrast(87%);
 }
 
-/* layout */
+/* header */
 
 .header {
     position: fixed;
@@ -125,6 +128,16 @@ a[href*="youtu.be"]::after {
     height: 4rem;
     padding-left: 5vw;
 } 
+
+.page-title a {
+    color: white;
+    text-decoration: none;
+}
+
+.page-title a:hover{
+    color: white;
+    text-decoration: underline;
+}
 
 .header-item>a {
     color: var(--text-color-dark);

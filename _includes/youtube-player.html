@@ -1,0 +1,25 @@
+<style>
+    .youtube-container {
+        position: relative;
+        aspect-ratio: 16 / 9;
+        height: auto;
+        width: 100%;
+        max-width: 500px;
+    }
+    .youtube-container iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+
+        border: 0;
+    }
+</style>
+
+<div class="youtube-container">
+    <iframe src="https://youtube.com/embed/{{ include.id }}"
+    allowfullscreen="allowfullscreen" 
+    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+    </iframe>
+</div>
