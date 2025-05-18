@@ -20,8 +20,10 @@ html {
 
 body {
     font-family: "Noto Sans", "Noto Sans JP", "Noto Sans Symbols", "Noto Sans Symbols 2", sans-serif;
-    margin: 0;
+    margin: 0 auto;
     padding: 1rem 5vw;
+
+    max-width: 80ch;
 }
 
 /* https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
@@ -34,6 +36,48 @@ body {
                 user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
     }
+
+/* header */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: var(--header-color-dark);
+
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    align-items: center;
+    height: 4rem;
+    padding-left: max(5vw, calc(50vw - 40ch)); /* (100vw - 80ch)/2 */
+} 
+
+.page-title a {
+    color: white;
+    text-decoration: none;
+}
+
+.page-title a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.header-item>a {
+    color: var(--text-color-dark);
+    text-decoration: none;
+}
+
+.header-item>a:hover {
+    color: var(--text-color-dark);
+    text-decoration: underline;
+}
+
+.content {
+    padding-top: 4rem;
+}
 
 /* text styles */
 
@@ -68,10 +112,11 @@ ul {
 
 li {
     list-style-type: "🞙  ";
+    margin-bottom: 0.2em;
 }
 
-li li {
-    list-style-type: "🞙  ";
+li::marker {
+    line-height: 1em;
 }
 
 /* link styles */
@@ -109,46 +154,4 @@ a[href*="youtu.be"]::after {
 
 .icon-light {
     filter: brightness(0) saturate(100%) invert(97%) sepia(5%) saturate(262%) hue-rotate(228deg) brightness(118%) contrast(87%);
-}
-
-/* header */
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    background-color: var(--header-color-dark);
-
-    display: flex;
-    justify-content: flex-start;
-    gap: 3rem;
-    align-items: center;
-    height: 4rem;
-    padding-left: 5vw;
-} 
-
-.page-title a {
-    color: white;
-    text-decoration: none;
-}
-
-.page-title a:hover{
-    color: white;
-    text-decoration: underline;
-}
-
-.header-item>a {
-    color: var(--text-color-dark);
-    text-decoration: none;
-}
-
-.header-item>a:hover {
-    color: var(--text-color-dark);
-    text-decoration: underline;
-}
-
-.content {
-    padding-top: 4rem;
 }
