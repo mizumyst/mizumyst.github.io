@@ -1,12 +1,16 @@
 ---
 layout: post
 
-title: English Etymologies I Find Interesting
+title: English Words with Interesting Etymologies
 author: mizu
 ---
 
-English has a lot of words
+This list compiles some English words with etymologies I really like. I will only include etymologies that are more or less confirmed to be true, rather than being one of a few competing theories.
 
-# escalate
+## escalate
 
-# soy
+## pog
+
+## soy
+
+## tank
