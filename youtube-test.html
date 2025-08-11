@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-<h2>Youtube Player Testing</h2>
-    <p>This is a test page.</p>
+<h2>Youtube Player Test page</h2>
+    <p>This is a single video.</p>
     {% include youtube-player.html id="n3rZ7RDbgEQ" %}
-    <p>This is some text after the video.</p>
+    <p>This is a video carousel.</p>
+    {% assign videos = "KrAvW7Mf3Mw P3FSvKUbQQk yj5LSgZh6kg" | split: " " %}
+    {% include youtube-carousel.html videos=videos %}
+    <p>This is the final paragraph, to test spacing.</p>

@@ -1,0 +1,21 @@
+<style>
+    .scroll-container {
+    display: flex;             
+    overflow-x: auto;          
+    gap: 1rem;                            
+    scroll-snap-type: x mandatory;
+    }
+
+
+</style>
+
+<div class="scroll-container">
+    {% for video_id in include.videos %}
+        <div>
+            {% include youtube-container.html id=video_id %}
+        </div>
+    {% endfor %}
+</div>
+<div style="text-align: center;">
+    ← Scroll for more videos! ({{include.videos.size}} total) →
+</div>
